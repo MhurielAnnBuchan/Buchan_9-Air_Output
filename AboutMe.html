@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ICT Final Output | About</title>
+	<link rel="stylesheet" type="text/css" href="MyStyle.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<div class="nav-container">
+		<div class="nameplate"><a href="index.html" title="Home">More options</a></div>
+        <div class="nav-button"><a href="index.html" title="Home">Home</a></div>
+		<div class="nav-button"><a href="MyPortfolio.html" title="Projects/Portfolio">My Projects</a></div>
+		<div class="nav-button main"><a href="AboutMe.html" title="About Me">About Me</a></div>
+        <div class="nav-button"><a href="MoreContact.html" title="Contact Me!">My Contacts</a></div>
+	</div>
+	<div class="intro" style="background-image: linear-gradient(rgb(255, 110, 166), rgb(255, 110, 166)), url(images/happenis.png)">
+		<div>
+			<h1>About Me</h1>
+			<p>
+                A segment dedicated to understanding more about me: <br></p>
+		</div>
+	</div>
+	<div class="margin">
+		<div class="tab animate__animated animate__fadeIn">
+  			<button class="tablinks active" onclick="openSection(event, 'Information')"><h3>Personal Info</h3></button>
+  			<button class="tablinks" onclick="openSection(event, 'Education')"><h3>Education</h3></button>
+  			<button class="tablinks" onclick="openSection(event, 'Skills')"><h3>Skills</h3></button>
+		</div>
+
+		<div id="Information" class="tabcontent animate__animated animate__fadeIn" style="display: block;">
+			<div class="about-container">
+				<div class="info-item">
+					<p><b>Name:</b><br> Mhuriel <abbr title="Bandico">B.</abbr> Buchan</p>
+				</div>
+				<div class="info-item">
+					<p><b>Birthday:</b><br> August 17, 2009</p>
+				</div>
+				<div class="info-item">
+					<p><b>School:</b><br> <abbr title="Ramon Teves Pastor Memorial">RTPM</abbr> - Dumaguete Science High School</p>
+				</div>
+				<div class="info-item">
+					<p><b>Age now (2024):</b><br> 14 years old</p>
+				</div>
+				<div class="info-item">
+					<p><b>Grade Level and Section (<abbr title="School Year">S.Y</abbr> 2023-2024):</b><br> Grade 9 - Air</p>
+				</div>
+				<div class="info-item">
+					<p><b>Birthplace:</b><br> Dumaguete City, Negros Oriental</p>
+				</div>				
+				<div class="info-item">
+					<p><b>Career Objectives:</b><br> I want to become a doctor in the future</p>
+				</div>
+				<div class="info-item">
+					<p><b>Address</Address>:</b><br> Brgy. Pulantubig, Dumaguete City, Negros Oriental</p>
+				</div>
+				<div class="info-item">
+					<p>
+					<b>Hobbies:</b><br>  I like watching K-dramas, singing, cooking, playing guitar, and occasionally crocheting in my free time. 
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="Education" class="tabcontent education animate__animated animate__fadeIn">
+			<p><b>Kindergarten:</b> <br>St. Francis Divine College | <i>2014 - 2015</i></p>
+			<p><b>Elementary:</b><br>JC The life Christian School | <i>2015 - 2018</i><br>  Delfin M. Geraldez Memorial Elementary School| <i>2018 - 2019</i><br>  ABC Learning Center Tayasan Branch| <i>2019 - 2021</i></p>
+			<p><b>Junior High:</b><br>Ramon Teves Pastor Memorial - <br>Dumaguete Science High School | <i>2021 - Present</i></p>
+		</div>
+
+		<div id="Skills" class="tabcontent animate__animated animate__fadeIn">
+  			<div class="about-container">
+  				<div class="skills-item">
+  					<b>Video Editing - 60%</b>
+  					<div class="progress-bar">
+  						<span class="percent1"></span>
+  					</div>
+  				</div>
+  				<div class="skills-item">
+  					<b>Musical/Rhythmic Skills - 70%</b>
+  					<div class="progress-bar">
+  						<span class="percent2"></span>
+  					</div>
+  				</div>
+  				<div class="skills-item">
+  					<b> Investigative skills - 75%</b>
+  					<div class="progress-bar">
+  						<span class="percent3"></span>
+  					</div>
+  				</div>
+  				<div class="skills-item">
+  					<b>Solving Math Problems - 70%</b>
+  					<div class="progress-bar">
+  						<span class="percent4"></span>
+  					</div>
+                
+  				</div>
+  			</div>
+		</div>
+	</div>
+<script>
+function openSection(evt, sectionName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(sectionName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
